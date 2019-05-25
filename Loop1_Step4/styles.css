@@ -240,3 +240,29 @@ hr{
     
 
 }
+
+/*MEDIA QUERIES*/
+
+/*Mobile*/
+@media (min-width:900px) and (max-width:1099px){
+
+    .container{
+        width:40%;
+    }
+
+}
+
+@media (min-width:600px) and (max-width:899px){
+
+    .container{
+        width:60%;
+    }
+
+}
+
+@media (max-width: 599px){
+
+    .container{
+        width: 90%;
+    }
+}
