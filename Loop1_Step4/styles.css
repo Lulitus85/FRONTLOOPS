@@ -265,4 +265,16 @@ hr{
     .container{
         width: 90%;
     }
+
+    .cuadro input{
+        border: 1px solid white;
+        font-family: 'Roboto';
+        font-size: 0.8em;
+        font-weight: bold;
+        width: 65%;
+        margin-left:0;
+        outline:none;
+        box-shadow: none;
+        
+    }
 }
