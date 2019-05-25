@@ -17,7 +17,7 @@ body{
     background-color: white;
     background-image:url(img/bicycle.png);
     background-repeat: no-repeat;
-    background-position: center 165px ;
+    background-position: center 200px ;
     background-size: contain;
     margin-top: 10%;
     border-radius: 8px;
@@ -101,5 +101,117 @@ body{
 
 .detalle .total{
     padding-top: .7em;
+}
+
+/*MEDIA QUERIES*/
+
+/*Mobile*/
+
+@media (min-width: 601px) and (max-width:900px) {
+        .container{
+            width:75vw;
+            height: 80vh;
+            background-position: center 350px ;
+        }
+
+        .titulo{
+            padding-top: 15%;
+            align-items: center;
+        }
+
+        .titulo h1{
+            font-size: 3em;
+            padding-top:0;
+        }
+        
+        .titulo a{
+            margin: -5% 0 0 0;
+            width: 50px;
+            height: 50px;
+        }
+
+        .titulo a img{
+            width: 100%;
+            padding: .7em;
+        }
+        
+        .bajada{
+            padding: 0;
+            font-size:1.5em;
+            margin-top: 0;
+            text-align: center;
+            width:90%;
+        }
+
+        .precios{
+            margin-top:5%;
+        }
+
+        .detalle .total0{
+            font-size:1.2em;
+        }
+
+        .detalle .total{
+            font-size:1.4em;
+        }
+
+        .precios .precios2{
+            font-size: 1.5em;
+        }
+        
+}
+
+@media (max-width: 600px){
+
+        .container{
+            width: 90vw;
+            height: 90vh;
+            background-position: center 350px ;
+            background-size: contain;
+        }
+
+        .titulo{
+            width:90%;
+            padding-top: 15%;
+            align-items: center;
+        }
+
+        .titulo h1{
+            font-size: 2em;
+            padding:0;
+        }
+
+        .titulo a{
+            margin: -5% 0 0 0;
+        }
+
+        .bajada{
+            width:90%;
+            font-size:1em;
+            margin-top: 7%;
+            text-align: center;
+        
+        }
+
+        .precios{
+            width:90%;
+            margin-top:20%;
+        }
+
+        .detalle .total0{
+            font-size: 1.1em;
+        }
+
+        .detalle .total{
+            font-size: 1.3em;
+        }
+
+        .precios2{
+            font-size:1.5em;
+        }
+
+
+
+
 }
 
