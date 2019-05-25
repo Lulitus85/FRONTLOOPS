@@ -278,4 +278,8 @@ hr{
         box-shadow: none;
         
     }
+
+    .cuadro p {
+        background-color: white;
+    }
 }
