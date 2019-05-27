@@ -96,7 +96,7 @@ h3{
     }
     .container {
         width:100%;
-        margin-bottom: 0%;
+        margin-bottom: 10%;
     }
 
     .container:hover {
@@ -107,8 +107,7 @@ h3{
     .container2{
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
-        margin-bottom: 0;
-        padding-bottom: 15%;
+        margin-bottom: 10%
     }
 }
 @media (min-width: 501px) and (max-width: 750px)
