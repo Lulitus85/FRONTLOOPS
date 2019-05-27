@@ -6,7 +6,7 @@
 
 body{
     background-image: url(img/background.jpg);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
 }
 
@@ -168,3 +168,26 @@ img {
     margin:0; 
 }
 
+@media (max-width:450px)
+{
+    .creditcards{
+/*         margin-top: 10vw; */
+        width: 80%;
+    }
+}
+
+@media (min-width:451px) and (max-width: 750px)
+{
+    .creditcards{
+/*         margin-top: 10vw; */
+        width: 60%;
+    }
+}
+
+@media (min-width:751px) and (max-width: 980px)
+{
+    .creditcards{
+/*         margin-top: 10vw; */
+        width: 40%;
+    }
+}
