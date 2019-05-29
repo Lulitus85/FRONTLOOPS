@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    font-family: 'Roboto';
+    overflow-y: hidden;
+}
+
+.container1{
+    margin-left: 0;
+    padding:4% 0 0 5%;
+}
+
+h1{
+    font-weight: lighter;
+    font-size: 3em;
+    color:rgb(43, 43, 43);
+}
+.bajada{
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+
+.bajada p{
+    font-weight: bold;
+    color:rgb(192, 192, 192);
+    margin-left: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    width: 55vw;
+    list-style-type: none;
+    border: 1px solid gainsboro;
+    padding: 3%;
+    margin-top:3%;
+}
+
+
+ul li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(172,172,172);
+    font-weight: bold;
+}
+
+ul li a p{
+    margin-left: 0%;
+}
+
+li:hover{
+    box-shadow: 1px 5px 7px rgb(167, 167, 167);
+    cursor: pointer;
+}
+
+.imga{
+    width:3%;
+    margin-left: 0%;
+}
+
+.imga img{
+    width: 100%;
+    margin-left: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12%;
+}
+
+.footer p{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    margin-right: 0;
+    font-size: 0.9em;
+    color: rgb(172,172,172);
+    font-weight: bold;
+}
+
+
+.image{
+    width: 32vw;
+    margin: 0;
+  /*   background-image: url('img/side-g.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+}
+
+.image img{
+    width: 100%;
+}
+
+
+
