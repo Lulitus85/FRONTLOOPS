@@ -1,15 +1,17 @@
 *{
     box-sizing: border-box;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
 }
 
 body{
-    display: flex;
-    flex-direction: row;
     width: 100vw;
     font-family: 'Roboto';
     overflow-y: hidden;
+}
+
+.contenedor{
+    display: flex;
 }
 
 .container1{
@@ -100,16 +102,231 @@ li:hover{
 
 .image{
     width: 32vw;
+    height: 100vh;
     margin: 0;
-  /*   background-image: url('img/side-g.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 }
 
 .image img{
     width: 100%;
+    height: 100vh;
 }
 
+@media (max-width: 501px)
+{
+    body{
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .image{
+        width: 100vw;
+        display: contents;
+    }
 
+    .image img{
+        position: fixed;
+        top: 0px;
+        filter: blur(3px);
+        height: 100vh;
+        opacity: 0.9;
+    }
+
+    .contenedor{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: .8em;
+        margin: 5%;
+        padding: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        margin-top: 20%;
+    }
+
+    .bajada{
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        margin: 20% 0 0 0;
+    }
+
+    .footer p,a{
+        margin: 0 0 3% 0;
+    }
+
+    .footer p{
+        text-shadow: 1px 1px 7px white;
+    }
+
+    .footer a{
+        color: black;
+    }
+
+    h1{
+        color: white;
+        margin-bottom: 3%;
+        font-family: sans-serif;
+    }
+
+    li{
+        width: 80vw;
+        list-style-type: none;
+        border: 1px solid white;
+        padding: 3%;
+        margin-top:3%;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    ul li a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(2, 2, 2);
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    ul li a p{
+        margin-left: 0%;
+        color: black;
+    }
+
+    .bajada p{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        width: 70%;
+        margin: 2% 0 0 0;
+        text-shadow: 1px 1px 7px white;
+    }
+
+    .imga{
+        width:8%;
+    }
+}
+
+@media (min-width: 502px) and (max-width:780px)
+{
+    .contenedor{
+        width: 100%;
+    }
+    .container1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .image{
+        width: 50%;
+    }
+
+    .container1 h1{
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 8%;
+    }
+
+    .bajada{
+        width: 80%;
+    }
+
+    .bajada p{
+        font-size: .8em;
+        text-align: center;
+    }
+
+    li{
+        width: 70%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer p{
+        font-size: .8em;
+    }
+
+    .footer a{
+        font-size: .8em;
+        margin: 2% 0 0 0;
+        text-align: center;
+    }
+
+    ul li a p{
+        font-size: .8em;
+    }
+
+    .imga{
+        width: 10%;
+    }
+}
+
+@media (min-width: 780px) and (max-width:1100px)
+{
+    .contenedor{
+        width: 100%;
+    }
+    .container1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .image{
+        width: 50%;
+    }
+
+    .container1 h1{
+        text-align: center;
+    }
+
+    .bajada{
+        width: 80%;
+    }
+
+    .bajada p{
+        text-align: center;
+    }
+
+    li{
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer a{
+        margin: 2% 0 0 0;
+        text-align: center;
+    }
+
+    .imga{
+        width: 8%;
+    }
+}
 
